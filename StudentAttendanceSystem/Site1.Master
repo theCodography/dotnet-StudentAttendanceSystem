@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="StudentAttendanceSystem.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Student Attendance</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="header">
+                <h1>Student Attendance System</h1>
+                <div class="heading">
+                    <div class="heading-content">
+                        <span class="float-left pl-3">
+                            <a href="/">Home</a>
+                        </span>
+                        <asp:ContentPlaceHolder ID="heading" runat="server">
+                        </asp:ContentPlaceHolder>
+                        |
+                        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="body">
+
+                <asp:ContentPlaceHolder ID="body" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

@@ -52,7 +52,7 @@ namespace AdminAttendanceSystem
             dvAccount.Columns["accountRole"].DataPropertyName = "role_description";
 
             DataGridViewButtonColumn buttonEditAccount = new DataGridViewButtonColumn();
-            buttonEditAccount.Name = "addSchedule";
+            buttonEditAccount.Name = "editAccount";
             buttonEditAccount.HeaderText = "Action";
             buttonEditAccount.Text = "Edit";
             buttonEditAccount.UseColumnTextForButtonValue = true;
@@ -106,6 +106,10 @@ namespace AdminAttendanceSystem
                 AddStudentToClass formAddStudent = new AddStudentToClass(ClassID, ClassCode);
                 formAddStudent.FormClosed += frmAdd_Closed;
                 formAddStudent.ShowDialog();
+            }else if(dvClass.Columns[e.ColumnIndex].Name.Equals("addSchedule"))
+            {
+                AddScheduleToClass formAddSchedule = new AddScheduleToClass(ClassID, ClassCode);
+                formAddSchedule.ShowDialog();
             }
         }
 

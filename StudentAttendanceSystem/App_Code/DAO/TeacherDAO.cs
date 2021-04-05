@@ -17,7 +17,12 @@ namespace StudentAttendanceSystem.App_Code.DAO
             DataTable dt = DBContext.DBContext.GetDataBySQL(sql);
             return Convert.ToInt32(dt.Rows[0][0]);
         }
+        public static DataTable GetTeacher()
+        {
+            string sql = @"SELECT * FROM dbo.Teacher";
 
+            return DBContext.DBContext.GetDataBySQL(sql);
+        }
         public static DataTable GetTeacherSchedule(int teacherID)
         {
             string sql = @"SELECT C.class_id, C.class_code, S.subject_id, S.subject_code,S.subject_name,A.student_id,status_description, CS.teaching_date, CS.slot, Stu.student_name, Stu.student_code
@@ -26,7 +31,7 @@ namespace StudentAttendanceSystem.App_Code.DAO
                            AND cs.teacher_id =t.teacher_id AND CS.schedule_id =a.schedule_id AND T.teacher_id = " + teacherID;
             return DBContext.DBContext.GetDataBySQL(sql);
         }
-        public static int InsertTeacher(string Email, string Pass, int role,  string TeacherName)
+        public static int InsertTeacher(string Email, string Pass, int role, string TeacherName)
         {
             AccountDAO.InsertAccount(Email, Pass, role);
             string sql = "INSERT INTO dbo.Teacher VALUES  ( @name,  @email )";

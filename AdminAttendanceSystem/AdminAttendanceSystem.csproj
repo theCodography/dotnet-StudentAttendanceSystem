@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddScheduleToClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScheduleToClass.Designer.cs">
+      <DependentUpon>AddScheduleToClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStudentToClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddScheduleToClass.resx">
+      <DependentUpon>AddScheduleToClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudentToClass.resx">
       <DependentUpon>AddStudentToClass.cs</DependentUpon>
     </EmbeddedResource>

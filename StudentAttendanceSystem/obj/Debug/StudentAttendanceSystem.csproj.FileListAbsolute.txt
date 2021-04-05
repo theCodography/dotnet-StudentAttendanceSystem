@@ -5,3 +5,9 @@ D:\Course\Spring2021\prn131\StudentAttendanceManagement\StudentAttendanceSystem\
 D:\Course\Spring2021\prn131\StudentAttendanceManagement\StudentAttendanceSystem\obj\Debug\StudentAttendanceSystem.dll
 D:\Course\Spring2021\prn131\StudentAttendanceManagement\StudentAttendanceSystem\obj\Debug\StudentAttendanceSystem.pdb
 D:\Course\Spring2021\prn131\StudentAttendanceManagement\StudentAttendanceSystem\obj\Debug\StudentAttendanceSystem.csprojAssemblyReference.cache
+D:\Course\Spring2021\StudentAttendanceManagement\StudentAttendanceSystem\bin\StudentAttendanceSystem.dll.config
+D:\Course\Spring2021\StudentAttendanceManagement\StudentAttendanceSystem\bin\StudentAttendanceSystem.dll
+D:\Course\Spring2021\StudentAttendanceManagement\StudentAttendanceSystem\bin\StudentAttendanceSystem.pdb
+D:\Course\Spring2021\StudentAttendanceManagement\StudentAttendanceSystem\obj\Debug\StudentAttendanceSystem.csproj.CoreCompileInputs.cache
+D:\Course\Spring2021\StudentAttendanceManagement\StudentAttendanceSystem\obj\Debug\StudentAttendanceSystem.dll
+D:\Course\Spring2021\StudentAttendanceManagement\StudentAttendanceSystem\obj\Debug\StudentAttendanceSystem.pdb

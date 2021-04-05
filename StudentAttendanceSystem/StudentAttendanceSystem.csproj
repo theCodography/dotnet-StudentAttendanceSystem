@@ -90,6 +90,7 @@
     <Compile Include="App_Code\DAO\CheckAttendDAO.cs" />
     <Compile Include="App_Code\DAO\ClassDAO.cs" />
     <Compile Include="App_Code\DAO\RoleDAO.cs" />
+    <Compile Include="App_Code\DAO\ScheduleDAO.cs" />
     <Compile Include="App_Code\DAO\TeacherDAO.cs" />
     <Compile Include="Report\CheckAttend.aspx.cs">
       <DependentUpon>CheckAttend.aspx</DependentUpon>
